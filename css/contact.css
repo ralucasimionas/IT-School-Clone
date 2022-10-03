@@ -1,0 +1,139 @@
+.welcome {
+    background-color: var(--bg-primary);
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.welcome h1 {
+    text-align: center;
+
+}
+
+
+
+.contact h2 {
+    text-align: center;
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
+}
+
+.mainp {
+    margin-bottom: var(--spacing-large);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+}
+
+.contact-wrapper {
+    width: 50%;
+
+   
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+}
+
+
+.contact ul, .contact .contact-form {
+    display: flex; 
+    flex-direction: column;
+}
+
+.contact li {
+    display: flex;
+    justify-content: space-between;
+
+ 
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-large);
+    padding-bottom: var(--spacing-tiny);
+}
+
+.contact-details p, .contact-form {
+    font-size: var(--fs-medium);
+    margin-bottom: var(--spacing-tiny);
+}
+
+.contact .material-icons {
+    vertical-align: middle;
+    
+}
+
+.contact a, .contact .information {
+    color: var(--text-gray-light);
+    font-size: var(--fs-medium);
+}
+
+
+.contact label {
+    margin-bottom: var(--spacing-tiny);
+}
+
+.contact input, .contact textarea {
+    font-size: var(--fs-medium);
+    margin-bottom: var(--spacing-medium);
+    padding: var(--spacing-small);
+    
+    
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 100px;
+    width: auto;
+}
+
+.contact button {
+    background-color: var(--button-color);
+
+    width: 100px;
+
+    color: var(--text-white);
+    font-size: var(--fs-medium);
+
+    text-align: center;
+
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        width: 100%;
+
+        padding: 0;
+        margin-bottom: var(--spacing-small);
+        padding-bottom: var(--spacing-tiny);
+
+    } 
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        padding-top: 0;
+        padding-bottom: var(--spacing-medium);
+        margin-bottom: var(--spacing-small);
+
+    }
+    .contact li {
+        margin-bottom: var(--spacing-medium);
+    }
+
+   
+}
+
